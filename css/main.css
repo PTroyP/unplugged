@@ -248,7 +248,7 @@ aside .form {
 }
 
 .reviews h3 {
-  width:50%;
+  width:55%;
   margin: 20px 0;
 }
 .lacrue-image {
@@ -400,8 +400,146 @@ aside .form {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+/*General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+  header {
+    justify-content: center;
+  }
+
+  header .content-wrapper {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width:15.5%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width:38%;
+    margin: 0;
+    padding-right: 40px;
+  }
+
+  /* Features */
+
+  .features article {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width:63%;
+    text-align: center;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 55%;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width:65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+/* ===============================================================================
+    About page
+  ================================================================================
+  */
+
+  .mission-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width:48%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width:80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+  }
+
+
+
+
+/*================================================================================
+    FAQS page
+  ================================================================================
+  */
+  .faq .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 }
 
 @media print,
