@@ -130,11 +130,11 @@ p {
 }
 
 img {
-
+  width:100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -170,6 +170,14 @@ header  .content-wrapper {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .header-divider {
@@ -239,9 +247,13 @@ footer .copyright {
 /*----Hero Area----*/
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+
 }
 
 .hero-area h1 {
@@ -296,6 +308,8 @@ input[type=button] {
 /*----features----*/
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -340,8 +354,12 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-.reviews .content-wrapper article {
-
+.reviews.lacrue-image figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews h2 {
@@ -353,9 +371,7 @@ input[type=button] {
   width:55%;
   margin: 20px 0;
 }
-.lacrue-image {
 
-}
 
 /*==========================================================
   About page
@@ -549,12 +565,18 @@ h3 {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 35%;
+  }
+
   header nav {
     width:20%;
   }
 
   header nav ul {
+    display: flex;
     justify-content: space-between;
+    padding-left: 0;
   }
 
   header nav ul li {
@@ -567,9 +589,14 @@ h3 {
 
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
+    margin: 0;
   }
 
   /* Aside */
@@ -610,6 +637,16 @@ h3 {
   .reviews article {
     display: flex;
     justify-content: space-between;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -714,6 +751,10 @@ h3 {
       padding: 20px 0;
     }
 
+    header figure {
+      width: 30%;
+    }
+
     header nav ul li {
       font-size: 1.125em;
     }
@@ -756,6 +797,11 @@ h3 {
     }
     .reviews article div {
       width: 44%;
+    }
+
+    footer .contact h4,
+    footer .social h4 {
+      font-size: 1.875em;
     }
 
   /* ==========================================================================
