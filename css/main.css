@@ -787,6 +787,7 @@ h3 {
   */
   .faq .content-wrapper {
     justify-content: space-between;
+    align-items: start;
     margin-top: 95px;
     margin-bottom: 55px;
   }
