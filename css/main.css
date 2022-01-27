@@ -290,8 +290,6 @@ aside {
 aside .content-wrapper {
   margin-top: 0px;
 }
-aside .form-description {
-}
 
 aside .form {
   margin-top: 30px;
@@ -333,9 +331,6 @@ input[type='button'] {
   margin-bottom: 60px;
 }
 
-.features .content-wrapper {
-}
-
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -356,8 +351,6 @@ input[type='button'] {
 .features i {
   font-size: 3.75em;
   margin-bottom: 40px;
-}
-.features .features-item-description {
 }
 
 /*----reviews----*/
@@ -401,9 +394,6 @@ input[type='button'] {
 .mission h2 {
   line-height: 1.2;
   margin: 0;
-}
-
-.mission .mission-content {
 }
 
 .map figure {
